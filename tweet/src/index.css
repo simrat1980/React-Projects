@@ -1,0 +1,64 @@
+:root {
+  --medium-space: 0.6rem;
+  --small-space: 0.3rem;
+
+  --dark-grey: #8899a6;
+
+  --dot: "\00b7";
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.tweet{
+  box-sizing: border-box;
+  border: 2px solid gray;
+  width: 40rem;
+  display: flex;
+  min-height: 4.25rem;
+  padding:10px;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+}
+.avatar{
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+}
+.name{
+  font-weight: bold;
+  margin-right: 0.5em;
+  margin-bottom: 0.3em;
+}
+.handle{
+  color:var(--dark-grey);
+  font-size: 0.8125rem;
+}
+.time{
+  padding-left: 0.3em;
+  color: var(--dark-grey);
+}
+.time::before{
+  content: var(--dot);
+  padding-right: 0.3em;
+}
+.buttons {
+  margin-top: 10px;
+  margin-left: 2px;
+  font-size: 1.4em;
+  color: #aab8c2;
+  }
+  .reply-button, .retweet-button,
+.like-button, .more-options-button {
+width: 100px;
+display: inline-block;
+}
+  .like-count, .retweet-count {
+  
+    bottom: 5px;
+    left: 5px;
+    font-size: 13px;
+    margin-left: 10px;
+    font-weight: bold;
+    }
