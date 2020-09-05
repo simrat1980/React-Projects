@@ -1,27 +1,82 @@
-.App-nav{
-  margin:20px;
-  padding: 10px;
-  border-bottom: 2px solid #508fca;;
+:root {
+  box-sizing: border-box;
 }
 
-.App-nav ul {
-  padding: 0;
-  margin: 0;
-  }
-  .App-nav-item{
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+:focus {
+  outline: none;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+.App {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.App-nav{
+  display: flex;
+  gap: 1em;
+  border-bottom: 2px solid blue;
+  padding-bottom: 0.5em;
+  margin-bottom: 2em;
+}
+
+.App-nav li {
     list-style: none;
-    display: inline-block;
-    margin-right: 20px;
-    font-size: 32px;
-    border-bottom: 4px solid transparent;
-  }
-  .App-nav button{
+    }
+  
+  .App-nav-button{
     font-size: 18px;
     border: none;
     background: transparent;
     cursor: pointer;
+    text-decoration: none;
+  }
+  .App-nav-item{
+      border-bottom: 4px solid gold;
   }
   .App-content {
     margin: 0 20px;
+    }
+    .item-list{
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+
+    }
+    .item{
+      display: flex;
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid grey;
+    }
+    
+    .item-middle{
+      text-align: left;
+      margin-left: 0.5em;
+    }
+    .item-name{
+      margin-bottom: 0.3em;
+    }
+    .item-end{
+      text-align: right;
+      margin-left: auto;
+    }
+    .item-end button{
+      margin-top: 0.7em;
+      margin-bottom: 0.4em;
+      border: 2px solid gold;
+      padding: 0.5em 1em;
+      background-color: transparent;
+      cursor: pointer;
+      border-radius: 10px;
+    
     }
     

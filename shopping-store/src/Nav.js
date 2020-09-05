@@ -1,16 +1,29 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom';
 
-export default function Nav({onTabChange}) {
+export default function Nav() {
     return (
-        <nav className="App-nav">
-            <ul>
-                <li className="App-nav-item">
-                    <button onClick={()=>onTabChange('item')}>Item</button>    
+        
+            <ul className="App-nav">
+                <li>
+                    <NavLink 
+                    className="App-nav-button" 
+                    activeClassName="App-nav-item" 
+                    to="/items"
+                    >
+                    Items
+                    </NavLink>  
                 </li>
-                <li className="App-nav-item">
-                    <button onClick={()=>onTabChange('cart')}>Cart</button>
+                <li>
+                    <NavLink 
+                    className="App-nav-button" 
+                    activeClassName="App-nav-item" 
+                    to="/cart"
+                    >
+                    Cart
+                    </NavLink>
                 </li>
             </ul>
-        </nav>
+        
     )
 }

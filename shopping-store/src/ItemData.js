@@ -1,4 +1,5 @@
-export const itemData =[
+export const getItems =()=>
+{return[
     {
         id: 0,
         name: "Apple iPad",
@@ -31,4 +32,5 @@ export const itemData =[
         }
 
 
-];
+]
+};
